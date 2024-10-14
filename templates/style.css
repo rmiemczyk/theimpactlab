@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-image: url('templates/background.jpg');
+    background-color: #f0f0f0; /* Fallback color */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+
+.search-form {
+    display: flex; /* Align items horizontally */
+    margin: 10px auto; /* Centering */
+}
+
+.search-form input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.search-form button {
+    padding: 8px 12px;
+    margin-left: 5px; /* Space between input and button */
+    background-color: #f27a54; /* Match your theme */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Pointer on hover */
+}
+
+.search-form button:hover {
+    background-color: #2b7a78; /* Change color on hover */
+}
+header {
+    background-color: #2b7a78; /* Header background */
+    color: white;
+    padding: 10px 20px; /* Add some padding */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center vertically */
+}
+
+footer {
+    background-color: #2b7a78; /* Background color for header and footer */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative; /* To stack on top of the background */
+    z-index: 2; /* Bring it above the background */
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes up the full height */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.container {
+    flex: 1; /* Allow the container to grow and fill the available space */
+}
+
+}
+
+nav {
+    background-color: #2b7a78; /* Background color for navigation */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative; /* To stack on top of the background */
+    z-index: 2; /* Bring it above the background */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #2b7a78; /* Change background on hover */
+}
+
+.container {
+    flex: 1;
+    padding: 15px; /* Adjusted padding */
+    max-width: 400px; /* Decreased max width for a smaller box */
+    height: 500; /* Automatically adjust height to content */
+    margin: 100px auto; /* Center the container with top margin */
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* To stack on top of the background */
+    z-index: 2; /* Bring it above the background */
+    text-align: center; /* Center the text within the container */
+}
+
+.container2 {
+    flex: 1;
+    padding: 15px; /* Adjusted padding */
+    max-width: 800px; /* Decreased max width for a smaller box */
+    height: auto; /* Automatically adjust height to content */
+    margin: 100px auto; /* Center the container with top margin */
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* To stack on top of the background */
+    z-index: 2; /* Bring it above the background */
+    text-align: center; /* Center the text within the container */
+}
+.search-results-container {
+    position: absolute;
+    width: 100%; /* or specific width depending on design */
+    max-height: 300px; /* or as needed */
+    overflow-y: auto; /* Enables scrolling if content is too long */
+    background-color: white;
+    border: 1px solid #0999e0; /* simple border */
+    border-top: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* optional shadow for aesthetics */
+    z-index: 1000; /* Ensures it is above other content */
+}
+.highlight {
+    color: #f27a54;
+    font-weight: bold;
+}
+.highlight2 {
+    font-size: 3rem;
+    color: #2b7a78;
+    font-weight: bold;
+}
+.highlight3 {
+    font-size: 5rem;
+    color: #f27a54;
+    font-weight: bold;
+}
+
+h1 {
+    color: #fff; /* Color for headings */
+    font-size: 3rem;
+}
+h22 {
+    color: #333; /* Color for headings */
+}
+
+a {
+    color: #2b7a78; /* Color for links */
+    text-decoration: none; /* No underline for links */
+}
+
+a:hover {
+    color: #f27a54; /* Change link color on hover */
+}
