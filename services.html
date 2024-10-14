@@ -5,40 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Impact Lab | Our Services</title>
     <link rel="stylesheet" href="templates/style.css">
+    <style>
+        .paypal-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body style="background-image: url('templates/background5.jpg'); background-size: cover; background-position: center;">
 
-<body class="index-background">
-    <header>
-        <h1>our services</h1>
+<header>
+    <h1>Our Services</h1>
     <nav>
         <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="services.html">services</a></li>
-            <li><a href="work.html">our work</a></li>
-            <li><a href="resources.html">resources</a></li>
-            <li><a href="contact.html">contact</a></li>
-                <form class="search-form" action="/search" method="GET">
-        <input type="text" name="query" placeholder="Search..." required>
-        <button type="submit">search</button>
-    </form>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="work.html">Our Work</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+        <form class="search-form" action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search..." required>
+            <button type="submit">Search</button>
+        </form>
     </nav>
 </header>
-    <div class="container2">
-        <h2>What We Offer</h2>
-        <ul>
-            <p><strong>Impactful Strategy Design:</strong> We help organizations craft strategies that drive meaningful social change.</p>
-            <p><strong>Measurement Framework Creation:</strong> We develop tailored measurement frameworks to assess your impact.</p>
-            <p><strong>Research & Insights:</strong> Our research services provide valuable insights to inform your impact strategies.</p>
-            <p><strong>Live Reporting:</strong> We offer real-time reporting to track the change you make and accelerate your impact.</p>
-            <p><strong>Bespoke Work:</strong> We create custom solutions to meet your specific needs and challenges.</p>
-        </ul>
-    </div>
 
-    <footer>
-        <p>&copy; 2024 The Impact Lab. All Rights Reserved.</p>
-    </footer>
+<div class="container3">
+    <h2>What We Offer</h2>
+    <section>
+        <h3>Pay as You Go</h3>
+        <p>Not got the budget? That's fine, just pay for what you need as you can afford it. Under this service, we offer support or advice on Research or Insights work, small data coding projects, or bespoke work.</p>
+        <div class="paypal-container">
+            <div id="paypal-container-2WE9MHBXEYQVG"></div>
+        </div>
+    </section>
+    
+    <section>
+        <h3>Impactful Strategy Design</h3>
+        <p>We help organizations craft strategies that drive meaningful social change.</p>
+        <div class="paypal-container">
+            <div id="paypal-container-8BZFNDMTJYZA2"></div>
+        </div>
+    </section>
+    
+    <section>
+        <h3>Measurement Framework Creation</h3>
+        <p>We develop tailored measurement frameworks to assess your impact.</p>
+        <div class="paypal-container">
+            <div id="paypal-container-REGE9B6BNG3CN"></div>
+        </div>
+    </section>
+    
+    <!-- PayPal SDK Integration -->
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAex0RPacHPCx0n2I6qxBhN5i9yL6duMr_l0axtOn6tQTsznispAYhRjworaQJ-jg-jEmaY3cBHyq5Gdo&components=hosted-buttons&disable-funding=venmo&currency=GBP"></script>
+    <script>
+        // Render PayPal buttons for different services
+        paypal.HostedButtons({ hostedButtonId: "2WE9MHBXEYQVG" }).render("#paypal-container-2WE9MHBXEYQVG");
+        paypal.HostedButtons({ hostedButtonId: "8BZFNDMTJYZA2" }).render("#paypal-container-8BZFNDMTJYZA2");
+        paypal.HostedButtons({ hostedButtonId: "REGE9B6BNG3CN" }).render("#paypal-container-REGE9B6BNG3CN");
+    </script>
+</div>
+
+<footer>
+    <p>&copy; 2024 The Impact Lab. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
